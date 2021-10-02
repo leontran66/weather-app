@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Nav from './components/Nav/Nav';
-import './App.css';
+import Map from './components/Map/Map';
+import './App.scss';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
               <div>Timezones</div>
             </Route>
             <Route path='/'>
-              <div id='map'>Map</div>
+              <Map />
             </Route>
             <Route path='/index.html'>
               <div>Index</div>
