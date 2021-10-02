@@ -1,0 +1,47 @@
+$TABLET: 768px;
+$ICON_SIZE: 64px;
+
+.nav {
+  position: sticky;
+  order: 1;
+  width: 100%;
+  background-color: #131313;
+}
+
+.nav > ul {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav > ul > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $ICON_SIZE;
+  height: $ICON_SIZE;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 0.17s ease-in-out;
+}
+
+.nav > ul > a:hover,
+.nav > ul > a:focus {
+  background-color: #000000;
+}
+
+@media only screen and (min-width: $TABLET) {
+  .nav {
+    order: 0;
+    width: auto;
+  }
+
+  .nav > ul {
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+}
