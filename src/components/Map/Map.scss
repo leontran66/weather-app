@@ -1,0 +1,13 @@
+$TABLET: 768px;
+
+#map {
+  width: 100vw;
+  height: 100%;
+}
+
+@media only screen and (min-width: $TABLET) {
+  #map {
+    width: calc(100vw - 64px);
+    height: 100vh;
+  }
+}
